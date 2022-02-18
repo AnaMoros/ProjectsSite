@@ -1,0 +1,90 @@
+:root {
+  --yellow: #fbf3ab;
+  --light-pink: #f0b9dd;
+  --bg-color: #c7b9ff;
+  --deep-pink: #f04c86;
+  --raisin: #2b283a;
+  --heart-color: #fff;
+  --white: #fff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-heart {
+  min-height: 50%;
+}
+
+.box-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  font-family: 'Karla', sans-serif;
+  transition: background-color 250ms;
+}
+
+button {
+  font-family: inherit;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  border: none;
+  padding: 1em 2em;
+  color: var(--raisin);
+  background: var(--white);
+  margin: 0;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* heart styles */
+.heart {
+  background-color: var(--heart-color);
+  display: inline-block;
+  height: 100px;
+  position: relative;
+  top: 0px;
+  transform: rotate(-45deg);
+  width: 100px;
+  transition: background-color 250ms;
+}
+
+.heart:before,
+.heart:after {
+  content: '';
+  position: absolute;
+  background-color: var(--heart-color);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transition: background-color 250ms;
+}
+
+.heart:before {
+  top: -50px;
+  left: 0;
+}
+
+.heart:after {
+  left: 50px;
+  top: 0;
+}

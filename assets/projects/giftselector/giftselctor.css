@@ -1,0 +1,125 @@
+:root {
+  --yellow: #d42c4246;
+  --light-pink: #fcb0b5;
+  --lavender: #ffddcd;
+  --deep-pink: #b4023e;
+  --raisin: #2b283a;
+  --white: #fff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--lavender);
+  background-color: var(--raisin);
+  font-family: 'Karla', sans-serif;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+  background-color: var(--yellow);
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+form * {
+  padding: 0.5em;
+  font-size: 1.3rem;
+  font-family: inherit;
+}
+
+form label,
+form button {
+  font-weight: 700;
+}
+
+form *:not(label):not(div),
+.result {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  border: none;
+}
+
+select {
+  background: var(--white);
+  color: var(--raisin);
+}
+
+.result {
+  background: var(--light-pink);
+  color: var(--raisin);
+  min-width: 294.7px;
+  max-width: 5ch;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.result #cost-el {
+  color: var(--deep-pink);
+  font-weight: 700;
+}
+
+button {
+  color: var(--white);
+  background: var(--deep-pink);
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.error {
+  background: var(--deep-pink);
+  color: var(--white);
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  background-color: var(--white);
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  float: right;
+  display: grid;
+  place-content: center;
+}
+
+input[type='checkbox']::before {
+  content: '';
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--deep-pink);
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type='checkbox']:checked::before {
+  transform: scale(1);
+}

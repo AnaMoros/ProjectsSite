@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="unitconverter.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div class="container unit-inputs">
+      <label for="number">Number to Convert</label>
+      <input type="number" name="number" id="number" value="0" />
+    </div>
+    <div class="container">
+      <div class="container-main">
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <h2 id="varToConvert">0</h2>
+      </div>
+      <div class="container-result">
+        <div class="results-type" id="length">
+          <h3 class="row">Length (Meter/Feet)</h3>
+          <p class="row">
+            <span class="num-name-pair"><span class="num" id="meters">0</span> <span class="unit-name meter">meters</span></span> =
+            <span class="num-name-pair"><span class="num-convert" id="metersToFeet">0</span> <span class="unit-name foot">feet</span></span> |
+            <span class="num-name-pair"><span class="num" id="feet">0</span> <span class="unit-name foot">feet</span></span> =
+            <span class="num-name-pair"><span class="num-convert" id="feetToMeters">0</span> <span class="unit-name meter">meters</span></span>
+          </p>
+        </div>
+        <div class="results-type" id="volume">
+          <h3 class="row">Volume (Liters/Gallons)</h3>
+          <p class="row">
+            <span class="num-name-pair"><span class="num" id="liters">0</span> <span class="unit-name liter">liters</span></span> =
+            <span class="num-name-pair"><span class="num-convert" id="litersToGallons">0</span> <span class="unit-name gallon">gallons</span></span> |
+            <span class="num-name-pair"><span class="num" id="gallons">0</span> <span class="unit-name gallon">gallons</span></span> =
+            <span class="num-name-pair"><span class="num-convert" id="gallonsToLiters">0</span> <span class="unit-name liter">liters</span></span>
+          </p>
+        </div>
+        <div class="results-type" id="mass">
+          <h3 class="row">Mass (Kilograms/Pounds)</h3>
+          <p class="row">
+            <span class="num-name-pair"><span class="num" id="kilos">0</span> <span class="unit-name kilo">kilos</span></span> =
+            <span class="num-name-pair"><span class="num-convert" id="kilosToPounds">0</span> <span class="unit-name pound">pounds</span></span> |
+            <span class="num-name-pair"><span class="num" id="pounds">0</span> <span class="unit-name pound">pounds</span></span> =
+            <span class="num-name-pair"><span class="num-convert" id="poundsToKilos">0</span> <span class="unit-name kilo">kilos</span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="unitconverter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greeting Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="greetinggenerator.css">
+</head>
+<body>
+  <div class="card" id="card">
+    <p class="hidden" id="recipient-write"></p>
+    <p class="hidden" id="greeting-write">Greeting will go here</p>
+    <p class="hidden" id="greeting-select-write"></p>
+    <p class="hidden" id="sender-write"></p>
+</div>
+  <form id="form">
+      <label for="recipient">To:</label>
+      <input type="text" id="recipient" name="recipient">
+      <br>
+      <label for="greeting-select">Select greeting:</label>
+      <select id="greeting-select">
+          <option value="">--Select greeting--</option>
+          <option value="I choo choo choose you! 🚂">"I choo choo choose you! 🚂"</option>
+          <option value="You are my sunshine! 🌞">"You are my sunshine! 🌞"</option>
+          <option value="Happy Valentine's! 💘">"Happy Valentine's! 💘",</option>
+          <option value="write">Write personalised greeting 💌</option>
+      </select>
+      <br>
+      <label class="hidden" for="greeting">Write greeting:</label>
+      <textarea class="hidden" name="greeting" id="greeting" cols="30" rows="10"></textarea>
+      <label for="sender">From:</label>
+      <input type="text" id="sender" name="sender">
+  </form>
+  <script src="greetinggenerator.js"></script>
+</body>
+</html>
