@@ -18,34 +18,34 @@
             <p>Thanks for choosing GoodCorp, LLC!</p>
         </div>
         <div class="container-body">
-            <div class="btn-row">
-                <button class="btn btn-secondary">Wash Car: £10</button>
-                <button class="btn btn-secondary">Mow Lawn: £20</button>
-                <button class="btn btn-secondary">Pull Weeds: £30</button>
+            <div class="btn-row" id="btn_services">
+                <button class="btn btn-secondary" id="btn_wash">Wash Car: £10</button>
+                <button class="btn btn-secondary" id="btn_mow">Mow Lawn: £20</button>
+                <button class="btn btn-secondary" id="btn_pull">Pull Weeds: £30</button>
             </div>
             <div class="container-task">
-                <table>
-                    <tr class="row row-heading">
+                <table id="table_invoice">
+                    <tr class="row">
                         <th class="invoice-titles col-1">Task</th>
                         <th class="invoice-titles col-2">Total</th>
                     </tr>
-                    <tr class="row row-services">
+                    <tr class="row">
                         <td class="invoice-services col-1">Wash Car <span class="invoice-remove">remove</span></td>
                         <td class="invoice-cost col-2"><span class="currency">£</span>10</td>
                     </tr>
-                    <tr class="row row-services">
+                    <tr class="row">
                         <td class="invoice-services col-1">Mow Lawn <span class="invoice-remove">remove</span></td>
                         <td class="invoice-cost col-2"><span class="currency">£</span>20</td>
                     </tr>
-                    <tr class="row row-services">
+                    <tr class="row">
                         <td class="invoice-services col-1">Pull weeds <span class="invoice-remove">remove</span></td>
                         <td class="invoice-cost col-2"><span class="currency">£</span>30</td>
                     </tr>
                   </table>
             </div>
             <div class="container-total">
-                <table>
-                    <tr class="row row-heading">
+                <table id="table_total">
+                    <tr class="row">
                         <th class="invoice-titles col-1">Notes</th>
                         <th class="invoice-titles col-2">Total Amount</th>
                     </tr>
