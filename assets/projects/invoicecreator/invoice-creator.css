@@ -78,8 +78,8 @@ h1 {
   line-height: 2.5rem;
 }
 p {
+  margin-top: 0.75rem;
   font-size: 1rem;
-  line-height: 1.75rem;
 }
 .invoice-titles,
 .invoice-remove,
@@ -107,6 +107,8 @@ p {
   font-weight: var(--font-thin);
   font-size: 0.4em;
   padding-left: 1em;
+  position: relative;
+  top: -3px;
 }
 
 .invoice-total {
@@ -119,19 +121,25 @@ p {
   flex-direction: column;
   margin: auto;
   max-width: 550px;
+  min-height: 720px;
 }
 .container-header {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   background-color: var(--bg-header);
 }
 .container-body {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  flex-grow: 2;
+  padding: 2.5rem 2rem 0;
   background-color: var(--bg-body);
 }
 .container-task {
   border-bottom: 1px solid var(--elm-primary);
+  padding-bottom: 1em;
+}
+.container-total {
+  padding-bottom: 3em;
 }
 table {
   width: 100%;
@@ -145,14 +153,13 @@ table {
 .col-2 {
   text-align: right;
 }
-/* .container-total {
-} */
 
 /***** BUTTONS *****/
 .btn-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 .btn {
   border: 2px solid;
@@ -181,6 +188,7 @@ table {
   min-width: 145px;
 
   font-size: 0.875em;
+  line-height: 1.5em;
   color: var(--text-btn);
 }
 .btn-secondary:hover {
