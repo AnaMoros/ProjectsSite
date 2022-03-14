@@ -109,6 +109,7 @@ p {
   padding-left: 1em;
   position: relative;
   top: -3px;
+  line-height: 1.75em;
 }
 
 .invoice-total {
@@ -165,6 +166,7 @@ table {
   border: 2px solid;
   border-radius: 7px;
   padding: 0.6em;
+  cursor: pointer;
 }
 .btn-primary {
   width: 100%;
@@ -193,4 +195,9 @@ table {
 }
 .btn-secondary:hover {
   border-color: var(--btn-selected);
+}
+.btn-remove {
+  border: none;
+  background-color: var(--bg-body);
+  cursor: pointer;
 }

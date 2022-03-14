@@ -18,29 +18,29 @@
             <p>Thanks for choosing GoodCorp, LLC!</p>
         </div>
         <div class="container-body">
-            <div class="btn-row" id="btn_services">
-                <button class="btn btn-secondary" id="btn_wash">Wash Car: £10</button>
-                <button class="btn btn-secondary" id="btn_mow">Mow Lawn: £20</button>
-                <button class="btn btn-secondary" id="btn_pull">Pull Weeds: £30</button>
+            <div class="btn-row">
+                <button class="btn btn-secondary btn-services" id="btn_wash" value="Wash Car">Wash Car: £10</button>
+                <button class="btn btn-secondary btn-services" id="btn_mow" value="Mow Lawn">Mow Lawn: £20</button>
+                <button class="btn btn-secondary btn-services" id="btn_pull" value="Pull Weeds">Pull Weeds: £30</button>
             </div>
             <div class="container-task">
                 <table id="table_invoice">
-                    <tr class="row">
+                    <!-- <tr class="row">
                         <th class="invoice-titles col-1">Task</th>
                         <th class="invoice-titles col-2">Total</th>
-                    </tr>
-                    <tr class="row">
-                        <td class="invoice-services col-1">Wash Car <span class="invoice-remove">remove</span></td>
+                    </tr> -->
+                    <!-- <tr class="row">
+                        <td class="invoice-services col-1">Wash Car <button class="btn-remove invoice-remove">remove</button></td>
                         <td class="invoice-cost col-2"><span class="currency">£</span>10</td>
                     </tr>
                     <tr class="row">
-                        <td class="invoice-services col-1">Mow Lawn <span class="invoice-remove">remove</span></td>
+                        <td class="invoice-services col-1">Mow Lawn <button class="btn-remove invoice-remove">remove</button></td>
                         <td class="invoice-cost col-2"><span class="currency">£</span>20</td>
                     </tr>
                     <tr class="row">
-                        <td class="invoice-services col-1">Pull weeds <span class="invoice-remove">remove</span></td>
+                        <td class="invoice-services col-1">Pull weeds <button class="btn-remove invoice-remove">remove</button></td>
                         <td class="invoice-cost col-2"><span class="currency">£</span>30</td>
-                    </tr>
+                    </tr> -->
                   </table>
             </div>
             <div class="container-total">
@@ -50,13 +50,13 @@
                         <th class="invoice-titles col-2">Total Amount</th>
                     </tr>
                     <tr class="row">
-                        <td class="invoice-notes col-1">We accept cash, credit card, or PayPal</td>
-                        <td class="invoice-total col-2">£10</td>
+                        <td class="invoice-notes col-1" id="invoice-notes"></td>
+                        <td class="invoice-total col-2">£<span id="invoice-total">0</span></td>
                     </tr>
                   </table>
             </div>
             <div class="btn-row">
-                <button class="btn btn-primary" type="submit"><i class="fas fa-envelope"></i> Send invoice</button>
+                <button class="btn btn-primary" id="btn-reset" type="submit"><i class="fas fa-envelope"></i> Send invoice</button>
             </div>
         </div>
     </div>
